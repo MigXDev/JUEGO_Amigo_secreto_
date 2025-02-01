@@ -21,3 +21,8 @@ function agregarAmigo() // 2- Crear Funcion agregarAmigo()
     // 2.4- Limpiar el campo de entrada
     document.getElementById("amigo").value = "";
 }
+function actualizarLista() // 3- Funcion de lista de amigos
+{
+    let lista = document.getElementById("listaAmigos"); //3.1- Obtener la lista <ul>
+    lista.innerHTML = ""; //3.2-  Limpiar la lista
+}
