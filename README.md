@@ -56,4 +56,4 @@ Este proyecto es una aplicación web simple que permite a los usuarios agregar n
 
 ## Autor
 
-| [<img src="https://avatars.githubusercontent.com/u/196855177?s=96&v=4" width=115><br><sub>Miguel Angel Ajhuacho</sub>](https://github.com/MigXDev) |
+ [<img src="https://avatars.githubusercontent.com/u/196855177?s=96&v=4" width=125><br><sub>Miguel Angel Ajhuacho</sub>](https://github.com/MigXDev) 
