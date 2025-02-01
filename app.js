@@ -21,7 +21,7 @@ function agregarAmigo() // 2- Crear Funcion agregarAmigo()
     // 2.4- Limpiar el campo de entrada
     document.getElementById("amigo").value = "";
 
-    actualizarLista(); // 4- Funcion agregadaMostrar los nombres en la lista
+    actualizarLista(); // 3.3.4- Funcion agregada mostrar los nombres en la lista
 }
 
 function actualizarLista() // 3- Funcion de lista de amigos
@@ -38,4 +38,25 @@ function actualizarLista() // 3- Funcion de lista de amigos
         // 3.3.3- lista.appendChild(li) --> Agrega el <li> dentro de la lista en el HTML.
         lista.appendChild(li);
     }
+}
+
+function sortearAmigo() // 4- Funcion para sortear nombres de forma aleatorio con un boton
+{
+    // 4.1- Validar si hay nombres de amigos
+    // si la cantidad de nombres es igual a 0, muestra una alerta 
+    if (amigos.length === 0) {
+        alert("No hay amigos en la lista para sortear.");
+        return;
+    }
+    // 4.2- Generar un índice aleatorio
+    // A indiceAleatorio se le asigna el valor de: El largo de la lista de nombres * la funcion aleatoria
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    
+    // 4.3- El numero aleatorio elige un nombre dentro del array y se asigna a amigoSorteado
+    let amigoSorteado = amigos[indiceAleatorio];
+    
+    // 4.4- Hacemos aparecer el "resultado", como texto que se puede actulizar
+    // mensaje: Amigo seleccionado: (nombre)
+    document.getElementById("resultado").innerHTML = "Amigo seleccionado: " + amigoSorteado;
+    
 }
