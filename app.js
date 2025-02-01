@@ -58,4 +58,5 @@ function sortearAmigo() // 4- Funcion para sortear nombres de forma aleatorio co
     // 4.4- Hacemos aparecer el "resultado", como texto que se puede actulizar
     // mensaje: Amigo seleccionado: (nombre)
     document.getElementById("resultado").innerHTML = "Amigo seleccionado: " + amigoSorteado;
+    
 }
